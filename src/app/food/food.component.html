@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <ng-container *ngFor="let item of productlist">
-      <div class="card col-md-3">
+    <ng-container *ngFor="let item of foodList">
+      <div class="card col-md-3" routerLink="/fooddetails/{{item._id}}">
         <img src="{{ item.image }}" alt="" />
         <div class="card-body">
           <h4 class="card-title">{{ item.title }}</h4>

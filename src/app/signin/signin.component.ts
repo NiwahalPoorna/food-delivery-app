@@ -26,7 +26,7 @@ export class SigninComponent implements OnInit {
     });
   }
   login() {
-    this.http.get<any>('http://localhost:3000/signupUsers').subscribe({
+    this.http.get<any>('http://localhost:3000/clients').subscribe({
       next: (res) => {
         const user = res.find((a: any) => {
           return (
@@ -37,7 +37,7 @@ export class SigninComponent implements OnInit {
         if (user) {
           alert('Login Success');
           this.loginForm.reset();
-          this.router.navigate(['food']);
+          this.router.navigate(['home']);
           console.log(res);
         } else {
           alert('user not found');

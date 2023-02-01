@@ -33,7 +33,7 @@ export class SignupComponent {
         console.log(res);
         alert('signup succesful');
         this.signupForm.reset();
-        this.router.navigate(['home']);
+        this.router.navigate(['signin']);
       },
       error: () => {
         alert('err');

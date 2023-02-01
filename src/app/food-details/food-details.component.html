@@ -1,0 +1,89 @@
+<section class="section-content padding-y bg" *ngIf="foodData">
+    <div class="container">
+
+    <article class="card">
+        <div class="card-body">
+                <div class="row">
+                    <aside class="col-md-6">
+                            <article class="gallery-wrap">
+                                <div class="card img-big-wrap">
+                                    <img src="{{foodData.image}}">
+                                </div> <!-- card img-big-wrap.// -->
+                                
+                            </article> <!-- gallery-wrap .end// -->
+                    </aside>
+                    <main class="col-md-6">
+                        <article>
+                            <h1 class="title">{{foodData.title}}</h1>
+                             
+    
+                            <hr>
+                
+                            <div class="mb-3">
+
+                                
+                                <p>{{foodData.description}}</p>
+                                
+                            </div>
+                            
+                           
+    
+                            <div class="mb-3">
+                                <var class="price h4">${{foodData.price}}</var> <br>
+          
+                            </div> <!-- price-detail-wrap .// -->
+    
+                            <div class="mb-4">
+                                <button class="btn btn-primary mr-1">Oder now</button>
+                                
+                            </div>
+                            
+                        </article> <!-- product-info-aside .// -->
+                    </main> <!-- col.// -->
+                </div> <!-- row.// -->
+        </div> <!-- card-body.// -->
+    </article>
+    <article class="card mt-5">
+        <div class="card-body">
+            <div class="row">
+                <aside class="col-md-6">
+                    <h5>Limitations</h5>
+                    <dl class="row">
+                          <dt class="col-sm-3">Food orgin</dt>
+                          <dd class="col-sm-9">Sri Lankan freshly made with best ingredients</dd>
+    
+                          <dt class="col-sm-3">Serves</dt>
+                          <dd class="col-sm-9">medium will be for 2 serves with free water</dd>
+    
+                          <dt class="col-sm-3">Categories</dt>
+                          <dd class="col-sm-9">vegiterian and meat lovers both available</dd>
+    
+                          <dt class="col-sm-3">Toppings</dt>
+                          <dd class="col-sm-9">spicy, sweet and cheese with tomato paste</dd>
+                          
+                          <dt class="col-sm-3">offers</dt>
+                          <dd class="col-sm-9">with every large potion comes a free desert offer</dd>
+                    </dl>
+                </aside>
+                <aside class="col-md-6">
+                    <h5>Features</h5>
+                    <ul class="list-check">
+                        <li>variety of categories</li>
+                        <li>variety of potions</li>
+                        <li>customer friendly self service</li>
+                        <li>best seasonal offers</li>
+                    </ul>
+                </aside>
+            </div> <!-- row.// -->
+            <hr>
+            <p>
+                As as a nation that is witnessing massive and rapid growth, Sri Lanka is home to many technological advancements - and the people are picking them up at a rapid pace. As more people in the country turn to the internet and are happy to make their shopping trips in person only for local essentials, any business that can realistically sell online should be looking to tap into this lucrative e-market
+            </p>
+        </div> <!-- card-body.// -->
+    </article>
+    </div>
+    
+
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+

@@ -10,14 +10,24 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodComponent } from './food/food.component';
-
+import { FoodDetailsComponent } from './food-details/food-details.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { CartComponent } from './cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     SigninComponent,
     HomeComponent,
-    FoodComponent
+    FoodComponent,
+    FoodDetailsComponent,
+    NavbarComponent,
+    FooterComponent,
+    AboutusComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +35,7 @@ import { FoodComponent } from './food/food.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgbDropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
